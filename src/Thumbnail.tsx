@@ -29,13 +29,13 @@ const HERO: Record<string, string> = {
   slf210: 'slf-210-v3-08',
 };
 
-const Tile: React.FC<{slug: string; w: number; h: number; label: string; accent: string}> = ({
-  slug,
-  w,
-  h,
-  label,
-  accent,
-}) => (
+const Tile: React.FC<{
+  slug: string;
+  w: number;
+  h: number;
+  label: string;
+  accent: string;
+}> = ({slug, w, h, label, accent}) => (
   <div style={{width: w}}>
     <div
       style={{
@@ -175,7 +175,15 @@ export const Thumbnail: React.FC<{lang?: Lang}> = ({lang = 'ENGLISH'}) => {
       </div>
 
       {/* --- product collage: 3 + 2 --- */}
-      <div style={{position: 'absolute', left: SAFE.side, top: 500, display: 'flex', gap: 16}}>
+      <div
+        style={{
+          position: 'absolute',
+          left: SAFE.side,
+          top: 500,
+          display: 'flex',
+          gap: 16,
+        }}
+      >
         {(['srp350', 'srp400', 'srp501'] as const).map((k) => (
           <Tile
             key={k}
@@ -187,7 +195,15 @@ export const Thumbnail: React.FC<{lang?: Lang}> = ({lang = 'ENGLISH'}) => {
           />
         ))}
       </div>
-      <div style={{position: 'absolute', left: SAFE.side, top: 838, display: 'flex', gap: 16}}>
+      <div
+        style={{
+          position: 'absolute',
+          left: SAFE.side,
+          top: 838,
+          display: 'flex',
+          gap: 16,
+        }}
+      >
         {(['srp601', 'slf210'] as const).map((k) => (
           <Tile
             key={k}
@@ -227,7 +243,14 @@ export const Thumbnail: React.FC<{lang?: Lang}> = ({lang = 'ENGLISH'}) => {
                 borderBottom: i < 4 ? `1px solid ${C.lineSoft}` : 'none',
               }}
             >
-              <div style={{width: 4, height: 26, borderRadius: 2, background: PRODUCT_ACCENT[k]}} />
+              <div
+                style={{
+                  width: 4,
+                  height: 26,
+                  borderRadius: 2,
+                  background: PRODUCT_ACCENT[k],
+                }}
+              />
               <span
                 style={{
                   flex: 1,

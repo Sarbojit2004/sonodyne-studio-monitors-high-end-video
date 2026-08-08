@@ -98,10 +98,15 @@ export const BeatText: React.FC<{
         ) : null}
 
         {variant === 'numbers' && freqLow ? (
-          <div style={{marginTop: 26, opacity: interpolate(local, [8, 24], [0, 1], {
-            extrapolateLeft: 'clamp',
-            extrapolateRight: 'clamp',
-          })}}>
+          <div
+            style={{
+              marginTop: 26,
+              opacity: interpolate(local, [8, 24], [0, 1], {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+              }),
+            }}
+          >
             <FreqCurve lowHz={freqLow} p={p} accent={accent} width={900} height={90} />
           </div>
         ) : null}

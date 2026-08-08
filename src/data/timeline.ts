@@ -26,12 +26,7 @@ export type Move =
   | 'dolly-tweeter'
   | 'dolly-eq';
 
-export type Overlay =
-  | 'rigidity'
-  | 'directivity'
-  | 'eqsteps'
-  | 'phase'
-  | 'crossover';
+export type Overlay = 'rigidity' | 'directivity' | 'eqsteps' | 'phase' | 'crossover';
 
 export interface Shot {
   from: number;

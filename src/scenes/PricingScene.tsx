@@ -101,7 +101,14 @@ export const PricingScene: React.FC<{scene: Scene}> = ({scene}) => {
                 transform: `translateX(${interpolate(e, [0, 1], [26, 0])}px)`,
               }}
             >
-              <div style={{width: 5, height: 74, borderRadius: 3, background: PRODUCT_ACCENT[key]}} />
+              <div
+                style={{
+                  width: 5,
+                  height: 74,
+                  borderRadius: 3,
+                  background: PRODUCT_ACCENT[key],
+                }}
+              />
               <Photo
                 slug={ROW_IMG[key]}
                 w={128}

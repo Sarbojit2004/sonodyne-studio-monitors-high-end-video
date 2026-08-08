@@ -26,14 +26,15 @@ const LINKS: [string, string][] = [
   ['X', CONTACT.x],
 ];
 
-/** Label above value, clipped to its column - never overflows into a margin. */
+/** Label above value, wrapped inside its column - never overflows into a margin. */
 const Field: React.FC<{
   label: string;
   value: string;
   opacity: number;
-  wrap?: boolean;
-}> = ({label, value, opacity, wrap = false}) => (
-  <div style={{opacity, borderTop: `1px solid ${C.lineSoft}`, paddingTop: 9, minWidth: 0}}>
+}> = ({label, value, opacity}) => (
+  <div
+    style={{opacity, borderTop: `1px solid ${C.lineSoft}`, paddingTop: 9, minWidth: 0}}
+  >
     <div
       style={{
         ...T.micro,
@@ -59,7 +60,6 @@ const Field: React.FC<{
         // wrap rather than truncate: a clipped contact URL is a real loss, and
         // the grid rows simply grow to fit
         overflowWrap: 'anywhere',
-        ...(wrap ? {} : {}),
       }}
     >
       {value}
@@ -193,7 +193,7 @@ export const CtaScene: React.FC<{scene: Scene}> = ({scene}) => {
       </div>
 
       <div style={{position: 'absolute', left: SAFE.side, top: 1322, width: 920}}>
-        <Field label="STORE" value={CONTACT.address} opacity={rise(48)} wrap />
+        <Field label="STORE" value={CONTACT.address} opacity={rise(48)} />
       </div>
 
       {/* closing line - names all five products one last time */}
@@ -216,8 +216,7 @@ export const CtaScene: React.FC<{scene: Scene}> = ({scene}) => {
           whiteSpace: 'nowrap',
         }}
       >
-        SRP 350 G {'·'} SRP 400 G {'·'} SRP 501 G {'·'} SRP 601 G{' '}
-        {'·'} SLF 210 V3
+        SRP 350 G {'·'} SRP 400 G {'·'} SRP 501 G {'·'} SRP 601 G {'·'} SLF 210 V3
       </div>
     </AbsoluteFill>
   );

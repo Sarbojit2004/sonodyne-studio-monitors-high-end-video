@@ -58,7 +58,11 @@ export const Kicker: React.FC<{
   delay?: number;
 }> = ({children, accent = C.amber, frame, delay = 0}) => {
   const {opacity, y} = useRise(frame, delay);
-  const w = interpolate(Math.min(1, Math.max(0, (frame - delay) / 18)), [0, 1], [0, 44]);
+  const w = interpolate(
+    Math.min(1, Math.max(0, (frame - delay) / 18)),
+    [0, 1],
+    [0, 44],
+  );
   return (
     <div
       style={{

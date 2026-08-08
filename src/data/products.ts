@@ -151,5 +151,6 @@ export const CONTACT = {
   threads: 'threads.com/@shivanshelectronics.in',
   x: 'x.com/sarbo_shivansh',
   youtube: 'youtube.com/@shivanshelectronics-in',
-  address: '3, Ramanath Das Road, Dhakuria, Tanu Pukur, Garfa, Kolkata, West Bengal 700031',
+  address:
+    '3, Ramanath Das Road, Dhakuria, Tanu Pukur, Garfa, Kolkata, West Bengal 700031',
 } as const;

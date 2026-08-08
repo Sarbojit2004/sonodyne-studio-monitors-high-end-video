@@ -41,43 +41,41 @@ const BoundaryFlash: React.FC = () => {
   );
 };
 
-export const Reel: React.FC<{showSafeZones?: boolean}> = ({
-  showSafeZones = false,
-}) => {
+export const Reel: React.FC<{showSafeZones?: boolean}> = ({showSafeZones = false}) => {
   useFontsReady();
   return (
-  <AbsoluteFill style={{background: C.paper}}>
-    {TIMELINE.scenes.map((scene) => (
-      <Sequence
-        key={scene.id}
-        from={scene.from}
-        durationInFrames={scene.dur}
-        name={scene.id}
-        layout="none"
-      >
-        {scene.kind === 'pricing' ? (
-          <PricingScene scene={scene} />
-        ) : scene.kind === 'cta' ? (
-          <CtaScene scene={scene} />
-        ) : (
-          <ShotScene scene={scene} />
-        )}
-      </Sequence>
-    ))}
+    <AbsoluteFill style={{background: C.paper}}>
+      {TIMELINE.scenes.map((scene) => (
+        <Sequence
+          key={scene.id}
+          from={scene.from}
+          durationInFrames={scene.dur}
+          name={scene.id}
+          layout="none"
+        >
+          {scene.kind === 'pricing' ? (
+            <PricingScene scene={scene} />
+          ) : scene.kind === 'cta' ? (
+            <CtaScene scene={scene} />
+          ) : (
+            <ShotScene scene={scene} />
+          )}
+        </Sequence>
+      ))}
 
-    <BoundaryFlash />
+      <BoundaryFlash />
 
-    {/* ---- audio: every track is synthesized by scripts/gen_audio.py ---- */}
-    {/* continuous subtle texture, never silent across the full 88s */}
-    <Audio src={staticFile('audio/ambient-bed.wav')} volume={1} />
-    {/* original score: clinical setup -> widening pads -> clean sub foundation */}
-    <Audio src={staticFile('audio/music-bed.wav')} volume={1} />
-    {/* 67 transition cues, placed on the exact cut frames */}
-    <Audio src={staticFile('audio/sfx-cues.wav')} volume={1} />
-    {/* silent placeholder, ready for the recorded trilingual voiceover */}
-    <Audio src={staticFile('vo/voiceover-reel-sonodyne.wav')} volume={1} />
+      {/* ---- audio: every track is synthesized by scripts/gen_audio.py ---- */}
+      {/* continuous subtle texture, never silent across the full 88s */}
+      <Audio src={staticFile('audio/ambient-bed.wav')} volume={1} />
+      {/* original score: clinical setup -> widening pads -> clean sub foundation */}
+      <Audio src={staticFile('audio/music-bed.wav')} volume={1} />
+      {/* 67 transition cues, placed on the exact cut frames */}
+      <Audio src={staticFile('audio/sfx-cues.wav')} volume={1} />
+      {/* silent placeholder, ready for the recorded trilingual voiceover */}
+      <Audio src={staticFile('vo/voiceover-reel-sonodyne.wav')} volume={1} />
 
-    {showSafeZones ? <SafeZoneGuide /> : null}
-  </AbsoluteFill>
+      {showSafeZones ? <SafeZoneGuide /> : null}
+    </AbsoluteFill>
   );
 };

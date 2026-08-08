@@ -2,7 +2,13 @@ import React from 'react';
 import {interpolate} from 'remotion';
 import {C, F, RADIUS, SHADOW, T, WIDTH} from '../theme';
 import {Photo, treatmentOf} from './Photo';
-import {CrossoverFlow, DirectivityCone, EqSteps, PhaseDial, RigidityGrid} from './Overlays';
+import {
+  CrossoverFlow,
+  DirectivityCone,
+  EqSteps,
+  PhaseDial,
+  RigidityGrid,
+} from './Overlays';
 import type {Shot} from '../data/timeline';
 
 /**
@@ -37,7 +43,11 @@ const focusFor = (slug: string, mode: string): [number, number] => {
   return treatmentOf(slug) === 'card' ? [50, 50] : [50, 44];
 };
 
-const Overlay: React.FC<{shot: Shot; p: number; accent: string}> = ({shot, p, accent}) => {
+const Overlay: React.FC<{shot: Shot; p: number; accent: string}> = ({
+  shot,
+  p,
+  accent,
+}) => {
   switch (shot.overlay) {
     case 'rigidity':
       return <RigidityGrid p={p} accent={accent} />;

@@ -22,7 +22,13 @@ export const RigidityGrid: React.FC<{p: number; accent?: string}> = ({
   return (
     <svg
       viewBox="0 0 900 600"
-      style={{position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: fade * 0.7}}
+      style={{
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        opacity: fade * 0.7,
+      }}
     >
       {Array.from({length: cols + 1}).map((_, i) => (
         <line
@@ -52,7 +58,14 @@ export const RigidityGrid: React.FC<{p: number; accent?: string}> = ({
         const cx = (900 / cols) * (i % (cols + 1));
         const cy = (600 / rows) * Math.floor(i / (cols + 1));
         return (
-          <circle key={`n${i}`} cx={cx} cy={cy} r={2.4 * reveal} fill={accent} opacity={0.8} />
+          <circle
+            key={`n${i}`}
+            cx={cx}
+            cy={cy}
+            r={2.4 * reveal}
+            fill={accent}
+            opacity={0.8}
+          />
         );
       })}
     </svg>
@@ -65,12 +78,21 @@ export const DirectivityCone: React.FC<{p: number; accent?: string}> = ({
   accent = C.amber,
 }) => {
   const t = clamp01(p);
-  const grow = interpolate(t, [0.1, 0.7], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const grow = interpolate(t, [0.1, 0.7], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
   const fade = interpolate(t, [0.75, 1], [1, 0.25], {extrapolateLeft: 'clamp'});
   return (
     <svg
       viewBox="0 0 900 600"
-      style={{position: 'absolute', inset: 0, width: '100%', height: '100%', opacity: fade}}
+      style={{
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        opacity: fade,
+      }}
     >
       <defs>
         <linearGradient id="dirg" x1="0" y1="0" x2="1" y2="0">
@@ -109,10 +131,12 @@ export const EqSteps: React.FC<{p: number; accent?: string}> = ({
 }) => {
   const t = clamp01(p);
   const steps = 9;
-  const active = Math.floor(interpolate(t, [0.08, 0.86], [0, steps], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  }));
+  const active = Math.floor(
+    interpolate(t, [0.08, 0.86], [0, steps], {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    }),
+  );
   return (
     <div
       style={{
@@ -283,16 +307,46 @@ export const CrossoverFlow: React.FC<{p: number; accent?: string}> = ({
       }}
     >
       <svg width="100%" height={96} viewBox="0 0 700 96" preserveAspectRatio="none">
-        <line x1={10} y1={30} x2={10 + L * draw} y2={30} stroke={accent} strokeWidth={3} opacity={0.85} />
-        <line x1={10} y1={70} x2={10 + L * draw} y2={70} stroke={C.inkFaint} strokeWidth={3} opacity={0.8} />
+        <line
+          x1={10}
+          y1={30}
+          x2={10 + L * draw}
+          y2={30}
+          stroke={accent}
+          strokeWidth={3}
+          opacity={0.85}
+        />
+        <line
+          x1={10}
+          y1={70}
+          x2={10 + L * draw}
+          y2={70}
+          stroke={C.inkFaint}
+          strokeWidth={3}
+          opacity={0.8}
+        />
         <circle cx={10 + L * draw} cy={30} r={5} fill={accent} opacity={draw} />
         <circle cx={10 + L * draw} cy={70} r={5} fill={C.inkFaint} opacity={draw} />
       </svg>
       <div style={{display: 'flex', justifyContent: 'space-between', marginTop: -74}}>
-        <div style={{...T.micro, fontFamily: F.body, fontStretch: WIDTH.wide, color: accent}}>
+        <div
+          style={{
+            ...T.micro,
+            fontFamily: F.body,
+            fontStretch: WIDTH.wide,
+            color: accent,
+          }}
+        >
           BELOW 80Hz - SLF 210 V3
         </div>
-        <div style={{...T.micro, fontFamily: F.body, fontStretch: WIDTH.wide, color: C.inkMuted}}>
+        <div
+          style={{
+            ...T.micro,
+            fontFamily: F.body,
+            fontStretch: WIDTH.wide,
+            color: C.inkMuted,
+          }}
+        >
           ABOVE 80Hz - SRP MONITORS
         </div>
       </div>
@@ -329,7 +383,15 @@ export const FreqCurve: React.FC<{
 
   return (
     <svg width={width} height={height} style={{display: 'block', overflow: 'hidden'}}>
-      <line x1={0} y1={flatY} x2={width} y2={flatY} stroke={C.line} strokeWidth={1} strokeDasharray="4 7" />
+      <line
+        x1={0}
+        y1={flatY}
+        x2={width}
+        y2={flatY}
+        stroke={C.line}
+        strokeWidth={1}
+        strokeDasharray="4 7"
+      />
       <path
         d={path}
         fill="none"
