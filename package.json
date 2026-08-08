@@ -1,0 +1,31 @@
+{
+  "name": "sonodyne-reel-88s",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sonodyne SRP / SLF 88-second vertical reel - light background, Instagram safe-zone layout",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render SonodyneReel out/sonodyne-reel-88s.mp4",
+    "still": "remotion still SonodyneReel",
+    "typecheck": "tsc --noEmit",
+    "bundle": "remotion bundle",
+    "audio": "python3 scripts/gen_audio.py",
+    "thumbs": "python3 scripts/make_thumbnails.py",
+    "coverage": "python3 scripts/verify_coverage.py"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@remotion/bundler": "4.0.507",
+    "@remotion/cli": "4.0.507",
+    "@remotion/renderer": "4.0.507",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "4.0.507"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}

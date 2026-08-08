@@ -1,0 +1,1168 @@
+{
+ "fps": 30,
+ "width": 1080,
+ "height": 1920,
+ "durationInFrames": 2640,
+ "safe": {
+  "top": 250,
+  "bottom": 1580,
+  "side": 80
+ },
+ "scenes": [
+  {
+   "id": "s01-hook",
+   "from": 0,
+   "dur": 345,
+   "kind": "hook",
+   "shots": [
+    {
+     "mode": "panel",
+     "img": [
+      "studio-monitor-00"
+     ],
+     "sfx": "impact-deep",
+     "move": "push",
+     "text": "hook-a",
+     "from": 0,
+     "dur": 68,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "studio-monitor-02"
+     ],
+     "sfx": "whoosh-low",
+     "move": "driftL",
+     "text": "hook-b",
+     "from": 68,
+     "dur": 60,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-350-14"
+     ],
+     "sfx": "tick-hard",
+     "move": "push",
+     "text": "hook-c",
+     "from": 128,
+     "dur": 48,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-400-13"
+     ],
+     "sfx": "tick-hard",
+     "move": "driftR",
+     "text": "hook-c",
+     "from": 176,
+     "dur": 48,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-601-11"
+     ],
+     "sfx": "tick-hard",
+     "move": "push",
+     "text": "hook-c",
+     "from": 224,
+     "dur": 48,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-501-09"
+     ],
+     "sfx": "riser-open",
+     "move": "pull",
+     "text": "hook-d",
+     "from": 272,
+     "dur": 73,
+     "tier": "primary"
+    }
+   ],
+   "ambient": []
+  },
+  {
+   "id": "s02-dna",
+   "from": 345,
+   "dur": 285,
+   "kind": "dna",
+   "shots": [
+    {
+     "mode": "quad-dna",
+     "sfx": "chime-stack",
+     "text": "dna-a",
+     "img": [
+      "srp-350-01",
+      "srp-400-02",
+      "srp-501-02",
+      "srp-601-02"
+     ],
+     "labels": [
+      "SRP 350 G",
+      "SRP 400 G",
+      "SRP 501 G",
+      "SRP 601 G"
+     ],
+     "from": 345,
+     "dur": 90,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero",
+     "img": [
+      "srp-400-03"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "push",
+     "overlay": "rigidity",
+     "text": "dna-b",
+     "from": 435,
+     "dur": 65,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero-crop",
+     "img": [
+      "srp-601-07"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "dolly-tweeter",
+     "overlay": "directivity",
+     "text": "dna-c",
+     "from": 500,
+     "dur": 60,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero",
+     "img": [
+      "srp-501-05"
+     ],
+     "sfx": "tick-soft",
+     "move": "driftL",
+     "text": "dna-d",
+     "from": 560,
+     "dur": 38,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero",
+     "img": [
+      "srp-350-04"
+     ],
+     "sfx": "tick-soft",
+     "move": "driftR",
+     "text": "dna-d",
+     "from": 598,
+     "dur": 32,
+     "tier": "primary"
+    }
+   ],
+   "ambient": []
+  },
+  {
+   "id": "s03-350",
+   "from": 630,
+   "dur": 330,
+   "kind": "product",
+   "product": "srp350",
+   "shots": [
+    {
+     "mode": "hero",
+     "img": [
+      "srp-350-02"
+     ],
+     "sfx": "impact-soft",
+     "move": "push",
+     "text": "p350-title",
+     "from": 630,
+     "dur": 82,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "srp-350-03",
+      "srp-350-05"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "slideUp",
+     "text": "p350-spec",
+     "from": 712,
+     "dur": 48,
+     "tier": "primary"
+    },
+    {
+     "mode": "triad",
+     "img": [
+      "srp-350-06",
+      "srp-350-07",
+      "srp-350-08"
+     ],
+     "sfx": "tick-triple",
+     "move": "fan",
+     "text": "p350-spec",
+     "from": 760,
+     "dur": 46,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-350-13"
+     ],
+     "sfx": "whoosh-low",
+     "move": "push",
+     "text": "p350-sealed",
+     "from": 806,
+     "dur": 54,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero",
+     "img": [
+      "srp-350-09"
+     ],
+     "sfx": "tick-soft",
+     "move": "driftL",
+     "text": "p350-numbers",
+     "from": 860,
+     "dur": 46,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "srp-350-10",
+      "srp-350-11"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "slideL",
+     "text": "p350-brand",
+     "from": 906,
+     "dur": 54,
+     "tier": "primary"
+    }
+   ],
+   "ambient": [
+    {
+     "img": "srp-350-12",
+     "band": "top",
+     "from": 630,
+     "dur": 165
+    },
+    {
+     "img": "srp-350-16",
+     "band": "top",
+     "from": 795,
+     "dur": 165
+    },
+    {
+     "img": "srp-350-15",
+     "band": "bottom",
+     "from": 630,
+     "dur": 330
+    }
+   ]
+  },
+  {
+   "id": "s04-400",
+   "from": 960,
+   "dur": 315,
+   "kind": "product",
+   "product": "srp400",
+   "shots": [
+    {
+     "mode": "hero",
+     "img": [
+      "srp-400-09"
+     ],
+     "sfx": "impact-soft",
+     "move": "push",
+     "text": "p400-title",
+     "from": 960,
+     "dur": 80,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-400-12"
+     ],
+     "sfx": "whoosh-low",
+     "move": "driftR",
+     "text": "p400-port",
+     "from": 1040,
+     "dur": 54,
+     "tier": "primary"
+    },
+    {
+     "mode": "triad",
+     "img": [
+      "srp-400-04",
+      "srp-400-06",
+      "srp-400-07"
+     ],
+     "sfx": "tick-triple",
+     "move": "fan",
+     "text": "p400-spec",
+     "from": 1094,
+     "dur": 46,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-400-14"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "push",
+     "text": "p400-curv",
+     "from": 1140,
+     "dur": 48,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "srp-400-05",
+      "srp-400-08"
+     ],
+     "sfx": "tick-soft",
+     "move": "slideUp",
+     "text": "p400-numbers",
+     "from": 1188,
+     "dur": 46,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-400-01"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "driftL",
+     "text": "p400-brand",
+     "from": 1234,
+     "dur": 41,
+     "tier": "primary"
+    }
+   ],
+   "ambient": [
+    {
+     "img": "srp-400-11",
+     "band": "top",
+     "from": 960,
+     "dur": 160
+    },
+    {
+     "img": "srp-400-10",
+     "band": "top",
+     "from": 1120,
+     "dur": 155
+    },
+    {
+     "img": "srp-400-15",
+     "band": "bottom",
+     "from": 960,
+     "dur": 315
+    }
+   ]
+  },
+  {
+   "id": "s05-501",
+   "from": 1275,
+   "dur": 270,
+   "kind": "product",
+   "product": "srp501",
+   "shots": [
+    {
+     "mode": "hero",
+     "img": [
+      "srp-501-03"
+     ],
+     "sfx": "impact-soft",
+     "move": "push",
+     "text": "p501-title",
+     "from": 1275,
+     "dur": 80,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero-crop",
+     "img": [
+      "srp-501-06"
+     ],
+     "sfx": "stepper",
+     "move": "dolly-eq",
+     "overlay": "eqsteps",
+     "text": "p501-eq",
+     "from": 1355,
+     "dur": 70,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "srp-501-04",
+      "srp-501-07"
+     ],
+     "sfx": "tick-soft",
+     "move": "slideUp",
+     "text": "p501-spec",
+     "from": 1425,
+     "dur": 46,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-501-08"
+     ],
+     "sfx": "whoosh-low",
+     "move": "push",
+     "text": "p501-numbers",
+     "from": 1471,
+     "dur": 74,
+     "tier": "primary"
+    }
+   ],
+   "ambient": [
+    {
+     "img": "srp-501-01",
+     "band": "top",
+     "from": 1275,
+     "dur": 270
+    },
+    {
+     "img": "srp-501-10",
+     "band": "bottom",
+     "from": 1275,
+     "dur": 270
+    }
+   ]
+  },
+  {
+   "id": "s06-601",
+   "from": 1545,
+   "dur": 315,
+   "kind": "product",
+   "product": "srp601",
+   "shots": [
+    {
+     "mode": "hero",
+     "img": [
+      "srp-601-08"
+     ],
+     "sfx": "impact-deep",
+     "move": "push",
+     "text": "p601-title",
+     "from": 1545,
+     "dur": 85,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-601-10"
+     ],
+     "sfx": "whoosh-low",
+     "move": "driftL",
+     "text": "p601-headroom",
+     "from": 1630,
+     "dur": 60,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "srp-601-03",
+      "srp-601-04"
+     ],
+     "sfx": "tick-soft",
+     "move": "slideUp",
+     "text": "p601-spec",
+     "from": 1690,
+     "dur": 46,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-601-12"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "push",
+     "text": "p601-numbers",
+     "from": 1736,
+     "dur": 54,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "srp-601-05",
+      "srp-601-06"
+     ],
+     "sfx": "tick-soft",
+     "move": "fan",
+     "text": "p601-spec",
+     "from": 1790,
+     "dur": 40,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "srp-601-01"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "driftR",
+     "text": "p601-brand",
+     "from": 1830,
+     "dur": 30,
+     "tier": "primary"
+    }
+   ],
+   "ambient": [
+    {
+     "img": "srp-601-09",
+     "band": "top",
+     "from": 1545,
+     "dur": 315
+    },
+    {
+     "img": "srp-601-13",
+     "band": "bottom",
+     "from": 1545,
+     "dur": 315
+    }
+   ]
+  },
+  {
+   "id": "s07-slf",
+   "from": 1860,
+   "dur": 300,
+   "kind": "product",
+   "product": "slf210",
+   "shots": [
+    {
+     "mode": "hero",
+     "img": [
+      "slf-210-v3-08"
+     ],
+     "sfx": "sub-drop",
+     "move": "push",
+     "text": "slf-title",
+     "from": 1860,
+     "dur": 90,
+     "tier": "primary"
+    },
+    {
+     "mode": "hero-crop",
+     "img": [
+      "slf-210-v3-04"
+     ],
+     "sfx": "stepper",
+     "move": "dolly-eq",
+     "overlay": "phase",
+     "text": "slf-phase",
+     "from": 1950,
+     "dur": 65,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "slf-210-v3-03"
+     ],
+     "sfx": "whoosh-low",
+     "move": "driftR",
+     "overlay": "crossover",
+     "text": "slf-21",
+     "from": 2015,
+     "dur": 60,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "slf-210-v3-06",
+      "slf-210-v3-07"
+     ],
+     "sfx": "tick-soft",
+     "move": "slideUp",
+     "text": "slf-numbers",
+     "from": 2075,
+     "dur": 45,
+     "tier": "primary"
+    },
+    {
+     "mode": "panel",
+     "img": [
+      "slf-210-v3-01"
+     ],
+     "sfx": "whoosh-soft",
+     "move": "push",
+     "text": "slf-brand",
+     "from": 2120,
+     "dur": 40,
+     "tier": "primary"
+    }
+   ],
+   "ambient": []
+  },
+  {
+   "id": "s08-system",
+   "from": 2160,
+   "dur": 165,
+   "kind": "system",
+   "shots": [
+    {
+     "mode": "quad-range",
+     "sfx": "chime-stack",
+     "text": "sys-family",
+     "img": [
+      "srp-350-00",
+      "srp-400-00",
+      "srp-501-00",
+      "srp-601-00"
+     ],
+     "labels": [
+      "350 G",
+      "400 G",
+      "501 G",
+      "601 G"
+     ],
+     "from": 2160,
+     "dur": 90,
+     "tier": "primary"
+    },
+    {
+     "mode": "duo",
+     "img": [
+      "slf-210-v3-02",
+      "slf-210-v3-05"
+     ],
+     "sfx": "sub-drop",
+     "move": "slideUp",
+     "text": "sys-21",
+     "from": 2250,
+     "dur": 75,
+     "tier": "primary"
+    }
+   ],
+   "ambient": []
+  },
+  {
+   "id": "s09-pricing",
+   "from": 2325,
+   "dur": 195,
+   "kind": "pricing",
+   "shots": [],
+   "ambient": [],
+   "rowFrames": [
+    2340,
+    2358,
+    2376,
+    2394,
+    2412
+   ]
+  },
+  {
+   "id": "s10-cta",
+   "from": 2520,
+   "dur": 120,
+   "kind": "cta",
+   "shots": [],
+   "ambient": []
+  }
+ ],
+ "cues": [
+  {
+   "frame": 0,
+   "sfx": "impact-deep",
+   "scene": "s01-hook",
+   "gain": 1.0
+  },
+  {
+   "frame": 68,
+   "sfx": "whoosh-low",
+   "scene": "s01-hook",
+   "gain": 1.0
+  },
+  {
+   "frame": 128,
+   "sfx": "tick-hard",
+   "scene": "s01-hook",
+   "gain": 1.0
+  },
+  {
+   "frame": 176,
+   "sfx": "tick-hard",
+   "scene": "s01-hook",
+   "gain": 1.0
+  },
+  {
+   "frame": 224,
+   "sfx": "tick-hard",
+   "scene": "s01-hook",
+   "gain": 1.0
+  },
+  {
+   "frame": 272,
+   "sfx": "riser-open",
+   "scene": "s01-hook",
+   "gain": 1.0
+  },
+  {
+   "frame": 345,
+   "sfx": "chime-stack",
+   "scene": "s02-dna",
+   "gain": 1.0
+  },
+  {
+   "frame": 345,
+   "sfx": "transition-sweep",
+   "scene": "s02-dna",
+   "gain": 0.85
+  },
+  {
+   "frame": 435,
+   "sfx": "whoosh-soft",
+   "scene": "s02-dna",
+   "gain": 1.0
+  },
+  {
+   "frame": 500,
+   "sfx": "whoosh-soft",
+   "scene": "s02-dna",
+   "gain": 1.0
+  },
+  {
+   "frame": 560,
+   "sfx": "tick-soft",
+   "scene": "s02-dna",
+   "gain": 1.0
+  },
+  {
+   "frame": 598,
+   "sfx": "tick-soft",
+   "scene": "s02-dna",
+   "gain": 1.0
+  },
+  {
+   "frame": 630,
+   "sfx": "impact-soft",
+   "scene": "s03-350",
+   "gain": 1.0
+  },
+  {
+   "frame": 630,
+   "sfx": "air-swell",
+   "scene": "s03-350",
+   "gain": 0.55
+  },
+  {
+   "frame": 630,
+   "sfx": "air-swell",
+   "scene": "s03-350",
+   "gain": 0.55
+  },
+  {
+   "frame": 630,
+   "sfx": "transition-sweep",
+   "scene": "s03-350",
+   "gain": 0.85
+  },
+  {
+   "frame": 712,
+   "sfx": "whoosh-soft",
+   "scene": "s03-350",
+   "gain": 1.0
+  },
+  {
+   "frame": 760,
+   "sfx": "tick-triple",
+   "scene": "s03-350",
+   "gain": 1.0
+  },
+  {
+   "frame": 795,
+   "sfx": "air-swell",
+   "scene": "s03-350",
+   "gain": 0.55
+  },
+  {
+   "frame": 806,
+   "sfx": "whoosh-low",
+   "scene": "s03-350",
+   "gain": 1.0
+  },
+  {
+   "frame": 860,
+   "sfx": "tick-soft",
+   "scene": "s03-350",
+   "gain": 1.0
+  },
+  {
+   "frame": 906,
+   "sfx": "whoosh-soft",
+   "scene": "s03-350",
+   "gain": 1.0
+  },
+  {
+   "frame": 960,
+   "sfx": "impact-soft",
+   "scene": "s04-400",
+   "gain": 1.0
+  },
+  {
+   "frame": 960,
+   "sfx": "air-swell",
+   "scene": "s04-400",
+   "gain": 0.55
+  },
+  {
+   "frame": 960,
+   "sfx": "air-swell",
+   "scene": "s04-400",
+   "gain": 0.55
+  },
+  {
+   "frame": 960,
+   "sfx": "transition-sweep",
+   "scene": "s04-400",
+   "gain": 0.85
+  },
+  {
+   "frame": 1040,
+   "sfx": "whoosh-low",
+   "scene": "s04-400",
+   "gain": 1.0
+  },
+  {
+   "frame": 1094,
+   "sfx": "tick-triple",
+   "scene": "s04-400",
+   "gain": 1.0
+  },
+  {
+   "frame": 1120,
+   "sfx": "air-swell",
+   "scene": "s04-400",
+   "gain": 0.55
+  },
+  {
+   "frame": 1140,
+   "sfx": "whoosh-soft",
+   "scene": "s04-400",
+   "gain": 1.0
+  },
+  {
+   "frame": 1188,
+   "sfx": "tick-soft",
+   "scene": "s04-400",
+   "gain": 1.0
+  },
+  {
+   "frame": 1234,
+   "sfx": "whoosh-soft",
+   "scene": "s04-400",
+   "gain": 1.0
+  },
+  {
+   "frame": 1275,
+   "sfx": "impact-soft",
+   "scene": "s05-501",
+   "gain": 1.0
+  },
+  {
+   "frame": 1275,
+   "sfx": "air-swell",
+   "scene": "s05-501",
+   "gain": 0.55
+  },
+  {
+   "frame": 1275,
+   "sfx": "air-swell",
+   "scene": "s05-501",
+   "gain": 0.55
+  },
+  {
+   "frame": 1275,
+   "sfx": "transition-sweep",
+   "scene": "s05-501",
+   "gain": 0.85
+  },
+  {
+   "frame": 1355,
+   "sfx": "stepper",
+   "scene": "s05-501",
+   "gain": 1.0
+  },
+  {
+   "frame": 1425,
+   "sfx": "tick-soft",
+   "scene": "s05-501",
+   "gain": 1.0
+  },
+  {
+   "frame": 1471,
+   "sfx": "whoosh-low",
+   "scene": "s05-501",
+   "gain": 1.0
+  },
+  {
+   "frame": 1545,
+   "sfx": "impact-deep",
+   "scene": "s06-601",
+   "gain": 1.0
+  },
+  {
+   "frame": 1545,
+   "sfx": "air-swell",
+   "scene": "s06-601",
+   "gain": 0.55
+  },
+  {
+   "frame": 1545,
+   "sfx": "air-swell",
+   "scene": "s06-601",
+   "gain": 0.55
+  },
+  {
+   "frame": 1545,
+   "sfx": "transition-sweep",
+   "scene": "s06-601",
+   "gain": 0.85
+  },
+  {
+   "frame": 1630,
+   "sfx": "whoosh-low",
+   "scene": "s06-601",
+   "gain": 1.0
+  },
+  {
+   "frame": 1690,
+   "sfx": "tick-soft",
+   "scene": "s06-601",
+   "gain": 1.0
+  },
+  {
+   "frame": 1736,
+   "sfx": "whoosh-soft",
+   "scene": "s06-601",
+   "gain": 1.0
+  },
+  {
+   "frame": 1790,
+   "sfx": "tick-soft",
+   "scene": "s06-601",
+   "gain": 1.0
+  },
+  {
+   "frame": 1830,
+   "sfx": "whoosh-soft",
+   "scene": "s06-601",
+   "gain": 1.0
+  },
+  {
+   "frame": 1860,
+   "sfx": "sub-drop",
+   "scene": "s07-slf",
+   "gain": 1.0
+  },
+  {
+   "frame": 1860,
+   "sfx": "transition-sweep",
+   "scene": "s07-slf",
+   "gain": 0.85
+  },
+  {
+   "frame": 1950,
+   "sfx": "stepper",
+   "scene": "s07-slf",
+   "gain": 1.0
+  },
+  {
+   "frame": 2015,
+   "sfx": "whoosh-low",
+   "scene": "s07-slf",
+   "gain": 1.0
+  },
+  {
+   "frame": 2075,
+   "sfx": "tick-soft",
+   "scene": "s07-slf",
+   "gain": 1.0
+  },
+  {
+   "frame": 2120,
+   "sfx": "whoosh-soft",
+   "scene": "s07-slf",
+   "gain": 1.0
+  },
+  {
+   "frame": 2160,
+   "sfx": "chime-stack",
+   "scene": "s08-system",
+   "gain": 1.0
+  },
+  {
+   "frame": 2160,
+   "sfx": "transition-sweep",
+   "scene": "s08-system",
+   "gain": 0.85
+  },
+  {
+   "frame": 2250,
+   "sfx": "sub-drop",
+   "scene": "s08-system",
+   "gain": 1.0
+  },
+  {
+   "frame": 2325,
+   "sfx": "transition-sweep",
+   "scene": "s09-pricing",
+   "gain": 0.85
+  },
+  {
+   "frame": 2325,
+   "sfx": "impact-soft",
+   "scene": "s09-pricing",
+   "gain": 1.0
+  },
+  {
+   "frame": 2340,
+   "sfx": "tick-hard",
+   "scene": "s09-pricing",
+   "gain": 0.7
+  },
+  {
+   "frame": 2358,
+   "sfx": "tick-hard",
+   "scene": "s09-pricing",
+   "gain": 0.75
+  },
+  {
+   "frame": 2376,
+   "sfx": "tick-hard",
+   "scene": "s09-pricing",
+   "gain": 0.7999999999999999
+  },
+  {
+   "frame": 2394,
+   "sfx": "tick-hard",
+   "scene": "s09-pricing",
+   "gain": 0.85
+  },
+  {
+   "frame": 2412,
+   "sfx": "tick-hard",
+   "scene": "s09-pricing",
+   "gain": 0.8999999999999999
+  },
+  {
+   "frame": 2520,
+   "sfx": "transition-sweep",
+   "scene": "s10-cta",
+   "gain": 0.85
+  },
+  {
+   "frame": 2520,
+   "sfx": "riser-open",
+   "scene": "s10-cta",
+   "gain": 1.0
+  },
+  {
+   "frame": 2560,
+   "sfx": "chime-stack",
+   "scene": "s10-cta",
+   "gain": 0.8
+  }
+ ],
+ "coverage": {
+  "primary": [
+   "studio-monitor-00",
+   "studio-monitor-02",
+   "srp-350-14",
+   "srp-400-13",
+   "srp-601-11",
+   "srp-501-09",
+   "srp-350-01",
+   "srp-400-02",
+   "srp-501-02",
+   "srp-601-02",
+   "srp-400-03",
+   "srp-601-07",
+   "srp-501-05",
+   "srp-350-04",
+   "srp-350-02",
+   "srp-350-03",
+   "srp-350-05",
+   "srp-350-06",
+   "srp-350-07",
+   "srp-350-08",
+   "srp-350-13",
+   "srp-350-09",
+   "srp-350-10",
+   "srp-350-11",
+   "srp-400-09",
+   "srp-400-12",
+   "srp-400-04",
+   "srp-400-06",
+   "srp-400-07",
+   "srp-400-14",
+   "srp-400-05",
+   "srp-400-08",
+   "srp-400-01",
+   "srp-501-03",
+   "srp-501-06",
+   "srp-501-04",
+   "srp-501-07",
+   "srp-501-08",
+   "srp-601-08",
+   "srp-601-10",
+   "srp-601-03",
+   "srp-601-04",
+   "srp-601-12",
+   "srp-601-05",
+   "srp-601-06",
+   "srp-601-01",
+   "slf-210-v3-08",
+   "slf-210-v3-04",
+   "slf-210-v3-03",
+   "slf-210-v3-06",
+   "slf-210-v3-07",
+   "slf-210-v3-01",
+   "srp-350-00",
+   "srp-400-00",
+   "srp-501-00",
+   "srp-601-00",
+   "slf-210-v3-02",
+   "slf-210-v3-05"
+  ],
+  "ambient": [
+   "srp-350-12",
+   "srp-350-16",
+   "srp-350-15",
+   "srp-400-11",
+   "srp-400-10",
+   "srp-400-15",
+   "srp-501-01",
+   "srp-501-10",
+   "srp-601-09",
+   "srp-601-13"
+  ]
+ }
+}
