@@ -1,20 +1,25 @@
 {
-  "name": "sonodyne-reel-88s",
+  "name": "sonodyne-video-suite",
   "version": "1.0.0",
   "private": true,
-  "description": "Sonodyne SRP / SLF 88-second vertical reel - light background, Instagram safe-zone layout",
+  "description": "Sonodyne SRP / SLF reel (88s) + long-form (298s) - light background, all-original synthesized audio",
   "scripts": {
     "studio": "remotion studio",
     "render": "remotion render SonodyneReel out/sonodyne-reel-88s.mp4",
+    "render:lf": "remotion render SonodyneLongForm out/sonodyne-longform-298s.mp4",
     "still": "remotion still SonodyneReel",
     "typecheck": "tsc --noEmit",
     "bundle": "remotion bundle",
     "audio": "python3 scripts/gen_audio.py",
+    "audio:lf": "python3 scripts/gen_audio_lf.py",
     "thumbs": "python3 scripts/make_thumbnails.py",
-    "coverage": "python3 scripts/verify_coverage.py"
+    "coverage": "python3 scripts/verify_coverage.py",
+    "coverage:lf": "python3 scripts/verify_coverage_lf.py",
+    "package": "python3 scripts/package_zip.py"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource-variable/inter": "^5.3.0",
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
     "@remotion/bundler": "4.0.507",
     "@remotion/cli": "4.0.507",

@@ -1,14 +1,21 @@
-# Sonodyne SRP / SLF — 88-Second Vertical Reel
+# Sonodyne SRP / SLF — Video Suite
 
-A 1080×1920, 30fps, **88.000s (2,640 frame)** Remotion reel covering the Sonodyne
-**SRP 350 G**, **SRP 400 G**, **SRP 501 G**, **SRP 601 G** studio monitors and the
-**SLF 210 V3** active subwoofer, for **Shivansh Electronics**.
+Two Remotion deliverables covering the Sonodyne **SRP 350 G**, **SRP 400 G**,
+**SRP 501 G**, **SRP 601 G** studio monitors and the **SLF 210 V3** active
+subwoofer, for **Shivansh Electronics**:
 
-Source photography, the two logo files and the creative brief live at the repo root.
+- **The 88-second reel** — 1080×1920 vertical, Instagram safe-zone layout.
+- **The 298-second long-form video** — 1920×1080 landscape, no reserved zones,
+  full chapter-by-chapter deep dive. See [`LONGFORM.md`](LONGFORM.md) for its
+  own complete write-up (chapter structure, MOTU type-system inheritance,
+  branding cadence, validation).
+
+Source photography, both logo files, and the creative brief (plus a bonus
+official Sonodyne catalogue PDF) live at the repo root.
 
 ---
 
-## Quick start
+## Quick start — reel (88s, vertical)
 
 ```bash
 npm install
@@ -26,6 +33,35 @@ Thumbnails:
 npx remotion still ThumbnailEnglish thumbnails/thumbnail-sonodyne-reel-english.png
 npx remotion still ThumbnailHindi   thumbnails/thumbnail-sonodyne-reel-hindi.png
 npx remotion still ThumbnailBengali thumbnails/thumbnail-sonodyne-reel-bengali.png
+```
+
+## Quick start — long-form (298s, landscape)
+
+```bash
+npm install                            # (same install serves both deliverables)
+python3 scripts/build_timeline_lf.py   # timeline-lf.json (12 chapters + SFX cues)
+python3 scripts/measure_type_lf.py     # bc-metrics.json (BarlowCondensed advance widths)
+python3 scripts/gen_audio_lf.py        # synthesize the 298s audio (extends the reel's palette)
+npm run studio                         # preview -> select "SonodyneLongForm"
+npm run render:lf                      # out/sonodyne-longform-298s.mp4
+```
+
+Landscape thumbnails:
+
+```bash
+npx remotion still LFThumbnailEnglish thumbnails/thumbnail-sonodyne-longform-english.png
+npx remotion still LFThumbnailHindi   thumbnails/thumbnail-sonodyne-longform-hindi.png
+npx remotion still LFThumbnailBengali thumbnails/thumbnail-sonodyne-longform-bengali.png
+```
+
+Validation (run before trusting a render):
+
+```bash
+python3 scripts/verify_coverage_lf.py   # all 68 images placed exactly once
+python3 scripts/verify_audio_lf.py      # audio real, right length, cues on the cuts
+python3 scripts/qa_stills_lf.py         # pixel-level page-background + layout checks
+python3 scripts/branding_audit_lf.py    # timestamped Shivansh/Sonodyne cadence audit
+python3 scripts/package_zip.py          # out/sonodyne-project-src.zip (reproducible offline)
 ```
 
 > This environment blocks `remotion.media`, so Remotion cannot download its own
